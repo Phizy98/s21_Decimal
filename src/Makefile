@@ -18,7 +18,6 @@ s21_decimal.a:
 	ar rc s21_decimal.a $(s21_decimal_O)
 	ranlib s21_decimal.a
 
-
 test: s21_decimal.a
 	$(CC) $(CFLAGS) $(TEST_FILES) s21_decimal.a $(TESTFALGS) -o test_rez
 	./test_rez
